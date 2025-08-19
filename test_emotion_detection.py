@@ -8,6 +8,7 @@ class TestEmotionDetection(unittest.TestCase):
     DISGUST = "I feel disgusted just hearing about this"
     SADNESS = "I am so sad about this"
     FEAR = "I am really afraid that this will happen"
+    
     def test_joy(self):
         dominant_emotion = emotion_detector(self.JOY).get("dominant_emotion")
         self.assertEqual(dominant_emotion, "joy")
